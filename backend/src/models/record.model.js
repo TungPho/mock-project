@@ -25,7 +25,7 @@ const Record = sequelize.define(
     },
   },
   {
-    timestamps: true, // mặc định là true, có thể bỏ nếu không cần
+    timestamps: true,
   }
 );
 

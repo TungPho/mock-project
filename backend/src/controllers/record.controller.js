@@ -1,6 +1,4 @@
-const { Record, Symptom } = require("../models");
 const RecordService = require("../services/record.service");
-
 class RecordController {
   getAllRecords = async (req, res) => {
     try {
@@ -27,7 +25,7 @@ class RecordController {
         symptoms
       );
       return res.status(201).json({
-        message: "Created new Record success",
+        message: "Created new record success",
         record: newRecord,
       });
     } catch (error) {

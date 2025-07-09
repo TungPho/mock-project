@@ -6,11 +6,11 @@ async function connectWithRetry(retries = 10, delay = 2000) {
   for (let i = 0; i < retries; i++) {
     try {
       await db.authenticate();
-      console.log("✅ Sequelize connected");
+      console.log("Sequelize connected");
       return db;
     } catch (err) {
       console.error(
-        `❌ DB connect failed (attempt ${i + 1}/${retries}):`,
+        `DB connect failed (attempt ${i + 1}/${retries}):`,
         err.message
       );
       if (i === retries - 1) {

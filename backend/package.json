@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test dotenv -e .env.test jest",
     "start": "node server.js"
   },
   "jest": {
@@ -21,6 +21,7 @@
     "sequelize": "^6.37.7"
   },
   "devDependencies": {
+    "dotenv-cli": "^8.0.0",
     "jest": "^30.0.4",
     "supertest": "^7.1.1"
   }
