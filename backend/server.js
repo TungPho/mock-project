@@ -1,7 +1,7 @@
-const connectWithRetry = require("./src/dbs/db.connect");
-const PORT = Number(process.env.NODE_DOCKER_PORT) || 8080;
-
 const app = require("./src/app");
+const connectWithRetry = require("./src/dbs/db.connect");
+
+const PORT = Number(process.env.NODE_DOCKER_PORT) || 8080;
 
 (async () => {
   const db = await connectWithRetry();
@@ -11,4 +11,3 @@ const app = require("./src/app");
     console.log(`Server listening on :${PORT}`);
   });
 })();
-

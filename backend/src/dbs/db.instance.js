@@ -1,5 +1,4 @@
 const { Sequelize } = require("sequelize");
-
 class Database {
   static getInstance = () => {
     if (!this.dbInstance) {
