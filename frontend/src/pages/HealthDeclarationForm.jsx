@@ -277,14 +277,14 @@ const HealthDeclarationForm = () => {
           </button>
         </NavLink>
         {/* Form Data Display (for development) */}
-        <div className="mt-6 p-4 bg-gray-50 rounded-md">
+        {/* <div className="mt-6 p-4 bg-gray-50 rounded-md">
           <h3 className="text-sm font-medium text-gray-700 mb-2">
             Form Data (for development):
           </h3>
           <pre className="text-xs text-gray-600 overflow-auto">
             {JSON.stringify(formData, null, 2)}
           </pre>
-        </div>
+        </div> */}
       </div>
     </div>
   );
